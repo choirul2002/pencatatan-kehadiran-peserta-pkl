@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.treasureHunt">
+
+    <!-- TODO: Step 1 add in permissions for fine location and background -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+             The API key for Google Maps-based APIs.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDLFIPepTJpd58lQMU-KrPLzEFpUSLoa-s" />
+
+        <activity
+            android:name=".HuntMainActivity"
+            android:label="@string/title_activity_hunt"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleInstance">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <receiver android:name=".GeofenceBroadcastReceiver" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OnboardingActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".OnboardingFinishActivity" />
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".ActivityKebijakan" />
+        <activity android:name=".LogServiceActivity"/>
+        <activity android:name=".EditProfilActivity">
+<!--                        <intent-filter>-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
+
+<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        </intent-filter>-->
+        </activity>
+        <activity android:name=".HomePembimbingActivity"
+            android:windowSoftInputMode="adjustPan">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".MaintenanceActivity"/>
+        <activity android:name=".EditProfilPembimbingActivity"/>
+        <activity android:name=".HistoriActivity"
+            android:windowSoftInputMode="adjustPan">
+<!--                                    <intent-filter>-->
+<!--                                        <action android:name="android.intent.action.MAIN" />-->
+
+<!--                                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                                    </intent-filter>-->
+        </activity>
+<!--        <activity android:name=".Coba2"/>-->
+<!--        <activity android:name=".Coba"/>-->
+        <activity android:name=".IzinActivity"
+            android:windowSoftInputMode="adjustPan">
+<!--                                    <intent-filter>-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
+
+<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        </intent-filter>-->
+                    </activity>
+                    <activity android:name=".SuratActivity"
+                        android:windowSoftInputMode="adjustPan"/>
+                    <activity android:name=".Coba2">
+<!--                        <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".AsalPesertaActivity"/>
+        <activity android:name=".TimPesertaActivity"/>
+        <activity android:name=".PresensiActivity"/>
+        <activity android:name=".LogPosActivity"/>
+        <activity android:name=".KosongActivity"/>
+        <activity android:name=".ActivityKebijakanPembimbing"/>
+        <service android:name=".PesertaService"/>
+        <service android:name=".PembimbingService"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.treasureHunt.provider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

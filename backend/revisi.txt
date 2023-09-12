@@ -1,0 +1,5 @@
+search maps lokasi peserta pada pembimbing
+service dimatikan dapat notifikasi di pembimbing (sudah = 100%)
+jumlah alpa,izin,hadir (sudah = 100%)
+rekap terlambat (sudah) -> jadi satu dengan absensi -> fitur pencarian
+hari sebelumnya jika tidak masuk maka status tidak hadir (sudah = 100%)

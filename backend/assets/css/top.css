@@ -1,0 +1,51 @@
+.top-box {
+  height: 100px;
+  right: -5px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+  width: 100px;
+}
+.top-box span.before {
+  right: 89px;
+  background: #cb3d27;
+}
+.top-box span.on_top {
+  background: #012970;
+  color: #fff;
+  display: block;
+  left: -9px;
+  font-size: 1em;
+  padding: 5px 0;
+  position: relative;
+  text-align: center;
+  top: 25px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 140px;
+  z-index: 2;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fec131;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
