@@ -1,0 +1,12 @@
+{
+    "source sans pro": {
+        "italic": "source_sans_pro_italic_27672a92dcedb2218abd2dadee4fe950"
+    },
+    "font awesome 5 brands": {
+        "normal": "font_awesome_5_brands_normal_e83d6cd636d58defdf5b506f17a4e390"
+    },
+    "font awesome 5 free": {
+        "normal": "C:\\xampp\\htdocs\\simmapkl\\vendor\\dompdf\\dompdf\/lib\/fonts\/font_awesome_5_free_normal_bfe66b6c8bb81a96bbde6f502aab6835",
+        "900": "font_awesome_5_free_900_e40957a3474459173737d8d6ebb4b301"
+    }
+}
